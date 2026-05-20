@@ -1,0 +1,46 @@
+<div class="banner-image">
+  <img src="<%= @flat.picture_url %>" alt="<%= @flat.name %>" />
+</div>
+
+<div class="container py-4">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <div class="bg-light rounded p-4">
+        <h2><%= @flat.name %></h2>
+        <p class="p-0 m-0 address"><%= @flat.address %></p>
+      </div>
+      <div class="border-top my-4 px-4">
+        <h2 class="my-4">A bit more about this flat...</h2>
+        <div>
+          <%= @flat.description.html_safe %>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="bg-white rounded shadow p-4">
+        <h5 class="mb-4">Book this place</h5>
+        <form>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">From</span>
+            <input type="text" class="form-control" placeholder="" aria-label="from" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">To</span>
+            <input type="text" class="form-control" placeholder="" aria-label="to" aria-describedby="basic-addon1">
+          </div>
+          <button type="button" class="btn btn-danger btn-block btn-book">Block level button</button>
+        </form>
+      </div>
+      <div>
+        <h5 class="my-4">Details</h5>
+        <div class="d-flex gap-4">
+          <%= @flat.number_of_guests %> people - <%= @flat.price_per_night %>€
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-top mt-4 py-4">
+    <%= link_to "< Back to list of flats", flats_path, class: "btn btn-outline-primary" %>
+  </div>
+</div>

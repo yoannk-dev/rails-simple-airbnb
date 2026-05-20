@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="text-center my-4">Add a new flat</h1>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <div class="bg-light rounded p-4">
+        <%= render "form", flat: @flat %>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-top mt-4 py-4">
+    <%= link_to "< Back to list of flats", flats_path, class: "btn btn-outline-primary" %>
+  </div>
+</div>

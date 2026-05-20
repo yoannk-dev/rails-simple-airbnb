@@ -8,3 +8,51 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+html, body {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ .logo {
+  color: #dc3545;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+ }
+
+ .address {
+  font-size: 1.2rem;
+ }
+
+ .btn-book {
+  width: 100%;
+ }
+
+ .card-image {
+  max-height: 200px;
+  overflow: hidden;
+ }
+
+ .banner-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: -80px;
+ }
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
